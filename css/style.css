@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -24,10 +28,10 @@ ul li {
 ul li a {
   position: relative;
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 130px;
+  height: 130px;
   text-align: center;
-  line-height: 60px;
+  line-height: 100px;
   background-color: #333;
   border-radius: 50%;
   font-size: 30px;
@@ -35,7 +39,12 @@ ul li a {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
   transition: 0.5s;
+  padding-top: 20px;;
 }
+.fa-vuejs{
+  padding-top: 5px;
+}
+
 
 ul li a::before {
   content: '';
@@ -45,20 +54,20 @@ ul li a::before {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ffee10;
+  background: #763338;
     -webkit-transition: .5s;
     -o-transition: .5s;
   transition: .5s;
-    -webkit-transform: scale(0.9s);
-    -ms-transform: scale(0.9s);
-  transform: scale(0.9s);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+  transform: scale(1.03);
   z-index: -1;
 }
 
 ul li a:hover:before {
-    -webkit-transform: scale(0.9s);
-    -ms-transform: scale(0.9s);
-  transform: scale(0.9s);
-    -webkit-box-shadow: 0 0 15px #ffee10;
-  box-shadow: 0 0 15px #ffee10;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+  transform: scale(1.1);
+    -webkit-box-shadow: 0 0 15px #763338;
+  box-shadow: 0 0 15px #763338;
 }
