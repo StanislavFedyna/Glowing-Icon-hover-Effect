@@ -1,73 +1,81 @@
-*{
-  box-sizing: border-box;
+*
+{
+    box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #262626;
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+ul
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    margin: 0;
+    padding: 0;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
-ul li {
-  list-style: none;
-  margin: 0 15px;
+ul li
+{
+    margin: 0 15px;
+    list-style: none;
 }
 
-ul li a {
-  position: relative;
-  display: block;
-  width: 130px;
-  height: 130px;
-  text-align: center;
-  line-height: 100px;
-  background-color: #333;
-  border-radius: 50%;
-  font-size: 30px;
-  color: #666;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 20px;;
-}
-.fa-vuejs{
-  padding-top: 5px;
-}
-
-
-ul li a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #763338;
+ul li a
+{
+    font-size: 30px;
+    line-height: 100px;
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding-top: 20px;
     -webkit-transition: .5s;
-    -o-transition: .5s;
-  transition: .5s;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-  transform: scale(1.03);
-  z-index: -1;
+         -o-transition: .5s;
+            transition: .5s;
+    text-align: center;
+    color: #666;
+    border-radius: 50%;
+    background-color: #333;;
+}
+.fa-vuejs
+{
+    padding-top: 5px;
 }
 
-ul li a:hover:before {
+
+ul li a::before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    -webkit-transition: .5s;
+         -o-transition: .5s;
+            transition: .5s;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    border-radius: 50%;
+    background: #763338;
+}
+
+ul li a:hover:before
+{
     -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-  transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
     -webkit-box-shadow: 0 0 15px #763338;
-  box-shadow: 0 0 15px #763338;
+            box-shadow: 0 0 15px #763338;
 }
